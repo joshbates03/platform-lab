@@ -4,7 +4,7 @@ metadata:
   name: nginx-dev
   namespace: argocd
 spec:
-  project: default
+  project: dev
   source:
     repoURL: https://github.com/joshbates03/platform-lab
     targetRevision: HEAD
