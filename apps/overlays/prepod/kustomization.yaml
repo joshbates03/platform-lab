@@ -1,0 +1,7 @@
+namespace: preprod
+
+resources:
+  - ../../base
+
+patches:
+  - path: replica-patch.yaml
