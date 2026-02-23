@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/joshbates03/platform-lab
-    targetRevision: HEAD
+    targetRevision: main
     path: apps/applications
   destination:
     server: https://kubernetes.default.svc
