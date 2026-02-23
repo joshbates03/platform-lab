@@ -4,14 +4,14 @@ metadata:
   name: nginx-dev
   namespace: argocd
 spec:
-  project: prod
+  project: dev
   source:
     repoURL: https://github.com/joshbates03/platform-lab
     targetRevision: main
     path: apps/overlays/dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev
+    namespace: prod
   syncPolicy:
     automated:
       prune: true
