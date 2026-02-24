@@ -1,0 +1,8 @@
+# Default owner for everything
+* @joshbates03
+
+# Require explicit owner review for production + platform control plane definitions
+/apps/overlays/prod/ @joshbates03
+/apps/applications/ @joshbates03
+/apps/projects/ @joshbates03
+/infra/ @joshbates03
