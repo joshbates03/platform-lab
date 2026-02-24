@@ -60,10 +60,10 @@ jobs:
           kubectl kustomize apps/overlays/prod >/dev/null
 
       - name: kubectl dry-run (dev/preprod/prod)
-        run: |
-          kubectl apply --dry-run=client --validate=false -k apps/overlays/dev
-          kubectl apply --dry-run=client --validate=false -k apps/overlays/preprod
-          kubectl apply --dry-run=client --validate=false -k apps/overlays/prod
+  run: |
+    kubectl apply --dry-run=client --validate=false -k apps/overlays/dev
+    kubectl apply --dry-run=client --validate=false -k apps/overlays/preprod
+  kubectl apply --dry-run=client --validate=false -k apps/overlays/prod
 
       - name: kubeconform strict schema (dev/preprod/prod)
         run: |
